@@ -24,19 +24,15 @@ public class Main{
         switch (op) {
             case '+':
                 result = add(a, b);
-                // System.out.println(result);
                 break;
             case '-':
                 result = subtract(a, b);
-                // System.out.println(result);
                 break;
             case '*':
                 result = multiply(a, b);
-                // System.out.println(result);
                 break;
             case '/':
                 result = divide(a, b);
-                // System.out.println(result);
                 break;
 
         }
@@ -51,12 +47,8 @@ public class Main{
         System.out.println("What operation would you like to perform on the numbers (+, -, *, /)?");
         char operator = scan.next().charAt(0);
 
-        doMath(num1, num2, operator);
+        System.out.println(doMath(num1, num2, operator));
 
-        // System.out.println("Addition: " + add(5, 3));
-        // System.out.println("Subtraction: " + subtract(5, 3));
-        // System.out.println("Multiplication: " + multiply(5, 3));
-        // System.out.println("Division: " + divide(6, 3));
     }
 }
 
